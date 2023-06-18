@@ -88,3 +88,33 @@ Atm.Glare = 0.36
 Atm.Haze = 1.72
 
 
+local function createOrUpdatePointLight()
+    local player = game.Players.LocalPlayer
+    local char = player.Character or player.CharacterAdded:Wait()
+    local humanoidRootPart = char:WaitForChild("HumanoidRootPart")
+
+    local light = humanoidRootPart:FindFirstChild("PointLight")
+    if not light or not light:IsA("PointLight") then
+        light = Instance.new("PointLight")
+        light.Range = 20
+        light.Color = Color3.fromRGB(227, 217, 198)
+        light.Parent = humanoidRootPart
+        light.Shadows = false
+    end
+
+    for _, v in pairs(char.Head:GetChildren()) do
+        if v:IsA("PointLight") and v ~= light then
+            v:Destroy()
+        end
+    end
+end
+
+coroutine.wrap(function()
+    while true do
+        createOrUpdatePointLight()
+        light.Shadows = false
+        wait(1) -- Adjust the interval as desired (in seconds)
+    end
+end)()
+
+
