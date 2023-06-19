@@ -1,3 +1,6 @@
+if not game:IsLoaded() then
+  game.Loaded:Wait()
+end
 --[]
 if game.PlaceId == 189707 then
     for i,v in pairs(workspace:FindPartsInRegion3(Region3.new(Vector3.new(-228.4715118408203,196.49996948242188,370.7500915527344),Vector3.new(-228.4715118408203,196.49996948242188,370.7500915527344)),nil,math.huge)) do if v.Name == "InactiveCover" then v:Destroy() end end
