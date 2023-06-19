@@ -1,3 +1,6 @@
+if not game:IsLoaded() then
+  game.Loaded:Wait()
+end
 
 function plrchat(plr, chat)
 print(plr.Name..": "..tick().."\n"..chat)
