@@ -1,4 +1,6 @@
-task.wait(.1)
+if not game:IsLoaded() then
+  game.Loaded:Wait()
+end
 sethiddenproperty(game.Lighting, "Technology", "Future")
 
 workspace.DescendantAdded:Connect(function(v)
