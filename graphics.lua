@@ -84,7 +84,7 @@ ColorCor3.TintColor = Color3.fromRGB(222, 240, 255)
 
 
 SunRays.Intensity = 0.859
-SunRays.Spread = --[[0.356]] 0.727
+SunRays.Spread = --[[0.727]] 0.356
 
 
 Lighting.Ambient = Color3.fromRGB(2,2,2)
@@ -113,6 +113,13 @@ Atm2.Decay = Color3.fromRGB(92, 60, 13)
 Atm2.Glare = 0.63
 Atm2.Haze = 0
 
+ter = game:GetService("Workspace"):FindFirstChild("Terrain")
+ter.WaterColor = Color3.new(12/255, 84/255, 91/255)
+ter.WaterReflectance = 0.65
+ter.WaterTransparency = 0.65
+ter. WaterWaveSize = 1
+ter.WaterWaveSpeed = 25
+--ter.Decoration = true
 
 local function createOrUpdatePointLight()
     local player = game.Players.LocalPlayer
