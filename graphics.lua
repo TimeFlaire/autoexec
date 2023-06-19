@@ -71,7 +71,7 @@ ColorCor.Brightness = -0.04
 ColorCor.Contrast = 0.1
 ColorCor.Saturation = -0.4
 ColorCor.TintColor = Color3.fromRGB(254, 235, 235)
-
+--[[
 ColorCor2.Brightness = 0
 ColorCor2.Contrast = 0
 ColorCor2.Saturation = 0
@@ -81,7 +81,7 @@ ColorCor3.Brightness = 0
 ColorCor3.Contrast = 0
 ColorCor3.Saturation = 0
 ColorCor3.TintColor = Color3.fromRGB(222, 240, 255)
-
+--]]
 
 SunRays.Intensity = 0.859
 SunRays.Spread = --[[0.727]] 0.356
