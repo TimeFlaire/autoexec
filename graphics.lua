@@ -105,14 +105,14 @@ Atm.Color = Color3.fromRGB(199, 175, 166)
 Atm.Decay = Color3.fromRGB(44, 39, 33)
 Atm.Glare = 0.36
 Atm.Haze = 1.72
-
+--[[
 Atm2.Density = 0.211
 Atm2.Offset = 1
 Atm2.Color = Color3.fromRGB(216,255,250)
 Atm2.Decay = Color3.fromRGB(92, 60, 13)
 Atm2.Glare = 0.63
 Atm2.Haze = 0
-
+]]
 ter = game:GetService("Workspace"):FindFirstChild("Terrain")
 ter.WaterColor = Color3.new(12/255, 84/255, 91/255)
 ter.WaterReflectance = 0.65
@@ -148,4 +148,3 @@ coroutine.wrap(function()
         wait(1) -- Adjust the interval as desired (in seconds)
     end
 end)()
-
