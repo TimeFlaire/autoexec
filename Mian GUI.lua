@@ -1,6 +1,3 @@
-if not game:IsLoaded() then
-  game.Loaded:Wait()
-end
 local Plr = game:GetService("Players").LocalPlayer
 local Mouse = Plr:GetMouse()
 
