@@ -1,3 +1,7 @@
+if not game:IsLoaded() then
+  game.Loaded:Wait()
+end
+task.wait(2.5)
 local Plr = game:GetService("Players").LocalPlayer
 local Mouse = Plr:GetMouse()
 
