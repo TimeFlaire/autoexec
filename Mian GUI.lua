@@ -1,4 +1,3 @@
-while true do
 local Plr = game:GetService("Players").LocalPlayer
 local Mouse = Plr:GetMouse()
 
@@ -7,5 +6,3 @@ if not game:GetService("UserInputService"):IsKeyDown(Enum.KeyCode.LeftControl) t
 if not Mouse.Target then return end
 Plr.Character:MoveTo(Mouse.Hit.p)
 end)
-  wait()
-end
