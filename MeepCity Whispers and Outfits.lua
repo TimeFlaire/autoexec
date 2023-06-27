@@ -1,4 +1,4 @@
-if not game:IsLoaded() then
+--[[if not game:IsLoaded() then
   game.Loaded:Wait()
 end
 local Players = service("Players")
@@ -12,3 +12,6 @@ local ConnectionEvent = ReplicatedStorage:WaitForChild("ConnectionEvent")
 
 Constants.STATS.WHISPER_MAX_CHARACTERS = 999999
 Constants.STATS.WHISPER_MAX_CHARACTERS = 999999
+]]
+
+print("Hello world, from client.")
