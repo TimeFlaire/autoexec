@@ -1,6 +1,7 @@
 if not game:IsLoaded() then
   game.Loaded:Wait()
 end
+if game.PlaceId == 370731277 then
 
 game:GetService("Players").LocalPlayer:SetAttribute("BoomBox",true)
 game:GetService("Players").LocalPlayer:SetAttribute("PLUS",true)
@@ -16,3 +17,4 @@ local ConnectionEvent = ReplicatedStorage:WaitForChild("ConnectionEvent")
 
 Constants.STATS.WHISPER_MAX_CHARACTERS = 999999
 Constants.STATS.WHISPER_MAX_CHARACTERS = 999999
+end
