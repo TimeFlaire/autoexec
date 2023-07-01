@@ -1,7 +1,7 @@
 if not game:IsLoaded() then
   game.Loaded:Wait()
 end
-if game.PlaceId == 370731277 then
+if game:IsLoaded() then
 
 game:GetService("Players").LocalPlayer:SetAttribute("BoomBox",true)
 game:GetService("Players").LocalPlayer:SetAttribute("PLUS",true)
