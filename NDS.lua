@@ -2,6 +2,7 @@ if not game:IsLoaded() then
   game.Loaded:Wait()
 end
 --[]
+if game:IsLoaded() then
 if game.PlaceId == 189707 then
     for i,v in pairs(workspace:FindPartsInRegion3(Region3.new(Vector3.new(-228.4715118408203,196.49996948242188,370.7500915527344),Vector3.new(-228.4715118408203,196.49996948242188,370.7500915527344)),nil,math.huge)) do if v.Name == "InactiveCover" then v:Destroy() end end
     for i,v in pairs(workspace:FindPartsInRegion3(Region3.new(Vector3.new(-228.47145080566406,196.39996337890625,370.75006103515625),Vector3.new(-228.47145080566406,196.39996337890625,370.75006103515625)),nil,math.huge)) do if v.Name == "Door" then v:Destroy() end end
@@ -261,3 +262,5 @@ end
 
 game:GetService("ReplicatedStorage").Remotes.ChangeCamera:Destroy()
 game:GetService("ReplicatedStorage").Remotes.ChangeCamera2:Destroy()
+
+      end
