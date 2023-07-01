@@ -1,7 +1,7 @@
 if not game:IsLoaded() then
   game.Loaded:Wait()
 end
-
+if game:IsLoaded() then
 sethiddenproperty(game.Lighting, "Technology", "Future")
 
 workspace.DescendantAdded:Connect(function(v)
@@ -148,3 +148,5 @@ coroutine.wrap(function()
         wait(1) -- Adjust the interval as desired (in seconds)
     end
 end)()
+
+end
