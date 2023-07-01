@@ -1,7 +1,7 @@
 if not game:IsLoaded() then
   game.Loaded:Wait()
 end
-
+task.wait(5)
 sethiddenproperty(game.Lighting, "Technology", "Future")
 
 workspace.DescendantAdded:Connect(function(v)
@@ -10,7 +10,7 @@ v.Shadows = true
 end
 end)
 
-
+task.wait(1)
 --Operation Blackout Graphics
 
 local Vignette = true -- change to false if you don't want a shadow frame
