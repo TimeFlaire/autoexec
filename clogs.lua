@@ -1,7 +1,7 @@
 if not game:IsLoaded() then
   game.Loaded:Wait()
 end
-
+if game:IsLoaded() then
 function plrchat(plr, chat)
 print(plr.Name..": "..tick().."\n"..chat)
 end
@@ -63,3 +63,4 @@ Players.PlayerAdded:Connect(function(P)
        Spy(P)
    end
 end)
+end
