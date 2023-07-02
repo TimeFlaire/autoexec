@@ -48,8 +48,18 @@ if game.PlaceId == 189707 then
         for i,v in pairs(workspace:FindPartsInRegion3(Region3.new(Vector3.new(-153.60003662109375,32.39999771118164,-34),Vector3.new(-153.60003662109375,32.39999771118164,-34)),nil,math.huge)) do if v.Name == "Part" then v:Destroy() end end
         for i,v in pairs(workspace:FindPartsInRegion3(Region3.new(Vector3.new(-166.5,41.79985046386719,21.999767303466797),Vector3.new(-166.5,41.79985046386719,21.999767303466797)),nil,math.huge)) do if v.Name == "BallKeepOut" then v:Destroy() end end
         for i,v in pairs(workspace:FindPartsInRegion3(Region3.new(Vector3.new(-166.5,40.90003204345703,15.499961853027344),Vector3.new(-166.5,40.90003204345703,15.499961853027344)),nil,math.huge)) do if v.Name == "Curtain" then v:Destroy() end end
-        
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/birdwastaken/birdscripts/main/holeinthewall.lua"))()
+for i,v in pairs(workspace:FindPartsInRegion3(Region3.new(Vector3.new(-179.39996337890625,39.40001678466797,-81.00022888183594),Vector3.new(-179.39996337890625,39.40001678466797,-81.00022888183594)),nil,math.huge)) do if v.Name == "WallRight" then v:Destroy() end end
+for i,v in pairs(workspace:FindPartsInRegion3(Region3.new(Vector3.new(-166.5,39.40001678466797,-25),Vector3.new(-166.5,39.40001678466797,-25)),nil,math.huge)) do if v.Name == "LaneBlocker" then v:Destroy() end end
+for i,v in pairs(workspace:FindPartsInRegion3(Region3.new(Vector3.new(-178.1999969482422,33.79999923706055,-28),Vector3.new(-178.1999969482422,33.79999923706055,-28)),nil,math.huge)) do if v.Name == "BlockBall" then v:Destroy() end end
+for i,v in pairs(workspace:FindPartsInRegion3(Region3.new(Vector3.new(-154.8000030517578,33.79999923706055,-28),Vector3.new(-154.8000030517578,33.79999923706055,-28)),nil,math.huge)) do if v.Name == "BlockBall" then v:Destroy() end end
+for i,v in pairs(workspace:FindPartsInRegion3(Region3.new(Vector3.new(-153.60003662109375,32.39999771118164,-34),Vector3.new(-153.60003662109375,32.39999771118164,-34)),nil,math.huge)) do if v.Name == "Part" then v:Destroy() end end
+for i,v in pairs(workspace:FindPartsInRegion3(Region3.new(Vector3.new(-179.3999786376953,32.39999771118164,-34),Vector3.new(-179.3999786376953,32.39999771118164,-34)),nil,math.huge)) do if v.Name == "Part" then v:Destroy() end end
+for i,v in pairs(workspace:FindPartsInRegion3(Region3.new(Vector3.new(-166.5,39.400001525878906,-97.50022888183594),Vector3.new(-166.5,39.400001525878906,-97.50022888183594)),nil,math.huge)) do if v.Name == "WallBack" then v:Destroy() end end
+for i,v in pairs(workspace:FindPartsInRegion3(Region3.new(Vector3.new(-153.59999084472656,39.39999771118164,-81),Vector3.new(-153.59999084472656,39.39999771118164,-81)),nil,math.huge)) do if v.Name == "WallLeft" then v:Destroy() end end
+for i,v in pairs(workspace:FindPartsInRegion3(Region3.new(Vector3.new(-173.64999389648438,47.5,-41.5),Vector3.new(-173.64999389648438,47.5,-41.5)),nil,math.huge)) do if v.Name == "CeilingRight" then v:Destroy() end end
+for i,v in pairs(workspace:FindPartsInRegion3(Region3.new(Vector3.new(-166.50001525878906,41.800018310546875,22),Vector3.new(-166.50001525878906,41.800018310546875,22)),nil,math.huge)) do if v.Name == "BackBlocker" then v:Destroy() end end
+for i,v in pairs(workspace:FindPartsInRegion3(Region3.new(Vector3.new(-166.5,59.10005569458008,15.499961853027344),Vector3.new(-166.5,59.10005569458008,15.499961853027344)),nil,math.huge)) do if v.Name == "Curtain" then v:Destroy() end end
+for i,v in pairs(workspace:FindPartsInRegion3(Region3.new(Vector3.new(-159.35000610351562,47.5,-41.5),Vector3.new(-159.35000610351562,47.5,-41.5)),nil,math.huge)) do if v.Name == "CeilingLeft" then v:Destroy() end end
     elseif game.PlaceId == 10427804764 then
         local music = game:GetService("SoundService"):FindFirstChild("Music")
         if music then
