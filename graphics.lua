@@ -1,7 +1,7 @@
 if not game:IsLoaded() then
   game.Loaded:Wait()
 end
-if game:IsLoaded() then
+
 sethiddenproperty(game.Lighting, "Technology", "Future")
 
 workspace.DescendantAdded:Connect(function(v)
@@ -149,5 +149,4 @@ coroutine.wrap(function()
     end
 end)()
 ]]
-end
 
