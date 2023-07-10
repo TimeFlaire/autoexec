@@ -15,8 +15,8 @@ local Vignette = true -- change to false if you don't want a shadow frame
 
 
 
-local Lighting = game:GetService("Lighting")
-local StarterGui = game:GetService('Players').LocalPlayer:WaitForChild('PlayerGui')
+local Lighting = game:WaitForChild("Lighting")
+local StarterGui = game:WaitForChild('Players').LocalPlayer:WaitForChild('PlayerGui')
 local Bloom = Instance.new("BloomEffect")
 local Blur = Instance.new("BlurEffect")
 local ColorCor = Instance.new("ColorCorrectionEffect")
