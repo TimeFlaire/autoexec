@@ -1,7 +1,7 @@
 if not game:IsLoaded() then
   game.Loaded:Wait()
 end
-
+pcall(function()
 sethiddenproperty(game.Lighting, "Technology", "Future")
 
 workspace.DescendantAdded:Connect(function(v)
@@ -149,4 +149,5 @@ coroutine.wrap(function()
     end
 end)()
 ]]
+	end)
 
