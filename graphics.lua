@@ -1,10 +1,9 @@
 if not game:IsLoaded() then
   game.Loaded:Wait()
 end
-pcall(function()
-sethiddenproperty(game.Lighting, "Technology", "Future")
+sethiddenproperty(game:WaitForChild("Lighting"), "Technology", "Future")
 
-workspace.DescendantAdded:Connect(function(v)
+game:WaitForChild("Workspace").DescendantAdded:Connect(function(v)
 if v:IsA("SpotLight") or v:IsA("SurfaceLight") or v:IsA("PointLight") then
 v.Shadows = true
 end
@@ -149,5 +148,4 @@ coroutine.wrap(function()
     end
 end)()
 ]]
-	end)
 
