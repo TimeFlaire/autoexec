@@ -120,7 +120,7 @@ ter.WaterTransparency = 0.65
 ter. WaterWaveSize = 1
 ter.WaterWaveSpeed = 25
 --ter.Decoration = true
-
+--[[
 local function createOrUpdatePointLight()
     local player = game.Players.LocalPlayer
     local char = player.Character or player.CharacterAdded:Wait()
@@ -150,3 +150,4 @@ coroutine.wrap(function()
 end)()
 
 end
+]]
