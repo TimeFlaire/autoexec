@@ -8,5 +8,6 @@ for i,v in pairs(game:GetService("Workspace").Building.Eliminate:GetDescendants(
      v:Destroy()
  end
 end
+game:GetService("Workspace").Building:WaitForChild("Floor").Color = color3.FromRGB(12,12,12)
 end
 end
