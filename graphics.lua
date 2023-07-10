@@ -87,14 +87,14 @@ SunRays.Intensity = 0.859
 SunRays.Spread = --[[0.727]] 0.356
 
 
-Lighting.Ambient = Color3.fromRGB(2,2,2)
+Lighting.Ambient = Color3.fromRGB(128, 128, 128--[[2,2,2]])
 Lighting.Brightness = 2.25
 Lighting.ColorShift_Bottom = Color3.fromRGB(0,0,0)
 Lighting.ColorShift_Top = Color3.fromRGB(0,0,0)
 Lighting.EnvironmentDiffuseScale = 0.2
 Lighting.EnvironmentSpecularScale = 0.2
 Lighting.GlobalShadows = true
-Lighting.OutdoorAmbient = Color3.fromRGB(0,0,0)
+Lighting.OutdoorAmbient = Color3.fromRGB(--[[0,0,0]]128, 128, 128)
 Lighting.ShadowSoftness = 0.2
 Lighting.GeographicLatitude = 45
 Lighting.ExposureCompensation = 0
