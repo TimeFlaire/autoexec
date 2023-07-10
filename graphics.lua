@@ -1,5 +1,6 @@
 if not game:IsLoaded() then
   game.Loaded:Wait()
+	task.wait(15)
 end
 pcall(function()
 sethiddenproperty(game.Lighting, "Technology", "Future")
