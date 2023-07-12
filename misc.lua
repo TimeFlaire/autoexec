@@ -8,25 +8,14 @@ for i,v in pairs(game:GetService("Workspace").Building.Eliminate:GetDescendants(
      v:Destroy()
  end
 end
-			local args = {
-		[1] = true,
-		[2] = true,
-		[3] = 1
-	}
-			local args2 = {
-		[1] = true,
-		[2] = true,
-		[3] = 2
-	}
-
-
-		while true do
-
-	game:GetService("ReplicatedStorage").ServerEvents.SimonCommand:InvokeServer(unpack(args))
-			task.wait(.1)
-				game:GetService("ReplicatedStorage").ServerEvents.SimonCommand:InvokeServer(unpack(args2))
-			task.wait(.1)
-		end
+pcall(function()
+	while true do
+    	game:GetService("ReplicatedStorage").ServerEvents.SimonCommand:InvokeServer(true,true,1)
+        task.wait(.1)
+    	game:GetService("ReplicatedStorage").ServerEvents.SimonCommand:InvokeServer(true,true,2)
+        task.wait(.1)
+	end
+end)
 
 		
 end
