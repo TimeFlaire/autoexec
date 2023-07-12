@@ -12,7 +12,7 @@ end)
 
 --Operation Blackout Graphics
 
-local Vignette = true -- change to false if you don't want a shadow frame
+local Vignette = false -- change to false if you don't want a shadow frame
 
 
 
