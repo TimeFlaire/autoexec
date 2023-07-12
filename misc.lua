@@ -23,5 +23,35 @@ pcall(function() -- pcall to prevent the loop breaking
 	end
 end)
 
+pcall(function()
+	local root = getRoot(speaker.Character) or speaker.Character:FindFirstChildWhichIsA("BasePart")
+	
+	local function touch(x)
+		x = x:FindFirstAncestorWhichIsA("Part")
+		if x then
+			if firetouchinterest then
+				task.spawn(function()
+					firetouchinterest(x, root, 1)
+					wait()
+					firetouchinterest(x, root, 0)
+				end)
+			end
+			x.CFrame = root.CFrame
+		end
+	end
+
+
+while true do
+	for _, descendant in ipairs(workspace.Coins:GetDescendants()) do
+		if descendant:IsA("TouchTransmitter") then
+			touch(descendant)
+			task.wait(.1)
+		end
+		task.wait(.1)
+	end
+end
+		end)
+	
+	
 		
 end
