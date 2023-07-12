@@ -43,9 +43,8 @@ pcall(function()
 
 while true do
 	for _, descendant in ipairs(workspace.Coins:GetDescendants()) do
-		if descendant:IsA("TouchTransmitter") then
+		if descendant:IsA("TouchTransmitter") and descendant.Name == "TouchInterest" then
 			touch(descendant)
-			task.wait(.1)
 		end
 		task.wait(.1)
 	end
