@@ -13,13 +13,13 @@ end
 pcall(function() -- pcall to prevent the loop breaking
 	while true do
     	game:GetService("ReplicatedStorage").ServerEvents.SimonCommand:InvokeServer(true,true,1)
-        task.wait(.5)
+        task.wait(.3)
     	game:GetService("ReplicatedStorage").ServerEvents.SimonCommand:InvokeServer(true,true,2)
-        task.wait(.5)
+        task.wait(.3)
     	game:GetService("ReplicatedStorage").ServerEvents.SimonCommand:InvokeServer(true,true,3)
-	task.wait(.5)
+	task.wait(.3)
     	game:GetService("ReplicatedStorage").ServerEvents.SimonCommand:InvokeServer(true,true,4)
-			
+	task.wait(.3)
 	end
 end)
 
