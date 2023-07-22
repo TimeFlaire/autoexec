@@ -12,7 +12,6 @@ end)
 
 --Operation Blackout Graphics
 
-local Vignette = true -- change to false if you don't want a shadow frame
 
 
 
@@ -44,22 +43,6 @@ SunRays.Parent = Lighting
 Sky.Parent = Lighting
 Atm.Parent = Lighting
 Atm2.Parent = Lighting
-
-if Vignette == true then
-	local Gui = Instance.new("ScreenGui")
-	Gui.Parent = StarterGui
-	Gui.IgnoreGuiInset = true
-	
-	local ShadowFrame = Instance.new("ImageLabel")
-	ShadowFrame.Parent = Gui
-	ShadowFrame.AnchorPoint = Vector2.new(0.5,1)
-	ShadowFrame.Position = UDim2.new(0.5,0,1,0)
-	ShadowFrame.Size = UDim2.new(1,0,1.05,0)
-	ShadowFrame.BackgroundTransparency = 1
-	ShadowFrame.Image = "rbxassetid://4576475446"
-	ShadowFrame.ImageTransparency = 0.3
-	ShadowFrame.ZIndex = 10
-end
 
 Bloom.Intensity = 0.3
 Bloom.Size = 10
