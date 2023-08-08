@@ -2,7 +2,7 @@ if not game:IsLoaded() then
   game.Loaded:Wait()
 end
 
-sethiddenproperty(game:WaitForChild("Lighting"), "Technology", "Future")
+sethiddenproperty(Lighting, "Technology", "Future")
 
 game:WaitForChild("Workspace").DescendantAdded:Connect(function(v)
 if v:IsA("SpotLight") or v:IsA("SurfaceLight") or v:IsA("PointLight") then
@@ -71,13 +71,13 @@ SunRays.Spread = --[[0.727]] 0.356
 
 
 Lighting.Ambient = Color3.fromRGB(128, 128, 128--[[2,2,2]])
-Lighting.Brightness = 2.25
+Lighting.Brightness = 3.25
 Lighting.ColorShift_Bottom = Color3.fromRGB(0,0,0)
 Lighting.ColorShift_Top = Color3.fromRGB(0,0,0)
-Lighting.EnvironmentDiffuseScale = 0.2
+Lighting.EnvironmentDiffuseScale = 1
 Lighting.EnvironmentSpecularScale = 0.2
 Lighting.GlobalShadows = true
-Lighting.OutdoorAmbient = Color3.fromRGB(--[[0,0,0]]128, 128, 128)
+Lighting.OutdoorAmbient = Color3.fromRGB(2,2,2--[[128, 128, 128]])
 Lighting.ShadowSoftness = 0.2
 Lighting.GeographicLatitude = 45
 Lighting.ExposureCompensation = 0
@@ -88,7 +88,6 @@ Atm.Color = Color3.fromRGB(199, 175, 166)
 Atm.Decay = Color3.fromRGB(44, 39, 33)
 Atm.Glare = 0.36
 Atm.Haze = 1.72
---
 Atm2.Density = 0.211
 Atm2.Offset = 1
 Atm2.Color = Color3.fromRGB(216,255,250)
