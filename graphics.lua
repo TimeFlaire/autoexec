@@ -40,7 +40,7 @@ ColorCor.Parent = Lighting
 ColorCor2.Parent = Lighting
 ColorCor3.Parent = Lighting
 SunRays.Parent = Lighting
-Sky.Parent = Lighting
+--Sky.Parent = Lighting
 Atm.Parent = Lighting
 Atm2.Parent = Lighting
 
