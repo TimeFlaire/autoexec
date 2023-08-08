@@ -2,7 +2,7 @@ if not game:IsLoaded() then
   game.Loaded:Wait()
 end
 
-sethiddenproperty(Lighting, "Technology", "Future")
+sethiddenproperty(game:WaitForChild("Lighting", "Technology", "Future")
 
 game:WaitForChild("Workspace").DescendantAdded:Connect(function(v)
 if v:IsA("SpotLight") or v:IsA("SurfaceLight") or v:IsA("PointLight") then
