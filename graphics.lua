@@ -23,13 +23,13 @@ local ColorCor = Instance.new("ColorCorrectionEffect")
 local ColorCor2 = Instance.new("ColorCorrectionEffect")
 local ColorCor3 = Instance.new("ColorCorrectionEffect")
 local SunRays = Instance.new("SunRaysEffect")
-local Sky = Instance.new("Sky")
+--local Sky = Instance.new("Sky")
 local Atm = Instance.new("Atmosphere")
 local Atm2 = Instance.new("Atmosphere")
 
 
 for i, v in pairs(Lighting:GetChildren()) do
-	if v then
+	if v and not v:IsA("Sky") then
 		v:Destroy()
 	end
 end
