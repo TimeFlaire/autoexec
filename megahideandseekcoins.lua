@@ -1,6 +1,5 @@
 
-if game.PlaceID == "5708035517" then
-
+if game.PlaceId == 5708035517 then
 while task.wait() do
     for n,m in pairs(Game:GetService("Workspace"):GetDescendants()) do
         pcall(function()
