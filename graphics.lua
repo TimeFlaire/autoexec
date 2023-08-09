@@ -30,6 +30,7 @@ local Atm2 = Instance.new("Atmosphere")
 
 for i, v in pairs(Lighting:GetChildren()) do
 	if v and not v:IsA("Sky") then
+		if v:IsA("BloomEffect") or v:IsA("BlurEffect") or v:IsA("ColorCorrectionEffect") or v:IsA("SunRaysEffect") or v:IsA("Atmosphere")
 		v:Destroy()
 	end
 end
