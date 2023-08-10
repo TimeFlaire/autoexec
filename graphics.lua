@@ -50,7 +50,7 @@ Bloom.Intensity = 0.3
 Bloom.Size = 10
 Bloom.Threshold = 4
 
-Blur.Size = 3.3
+Blur.Size = 2
 
 ColorCor.Brightness = -0.04
 ColorCor.Contrast = 0.1
