@@ -10,22 +10,22 @@ v.Shadows = true
 end
 end)
 
---Operation Blackout Graphics
+--Operation Swarm Graphics
 
 
 
 
 local Lighting = game:WaitForChild("Lighting")
-local StarterGui = game:WaitForChild('Players').LocalPlayer:WaitForChild('PlayerGui')
+--local StarterGui = game:WaitForChild('Players').LocalPlayer:WaitForChild('PlayerGui')
 local Bloom = Instance.new("BloomEffect")
 local Blur = Instance.new("BlurEffect")
 local ColorCor = Instance.new("ColorCorrectionEffect")
-local ColorCor2 = Instance.new("ColorCorrectionEffect")
-local ColorCor3 = Instance.new("ColorCorrectionEffect")
+--local ColorCor2 = Instance.new("ColorCorrectionEffect")
+--local ColorCor3 = Instance.new("ColorCorrectionEffect")
 local SunRays = Instance.new("SunRaysEffect")
 --local Sky = Instance.new("Sky")
 local Atm = Instance.new("Atmosphere")
-local Atm2 = Instance.new("Atmosphere")
+--local Atm2 = Instance.new("Atmosphere")
 
 
 for i, v in pairs(Lighting:GetChildren()) do
@@ -68,18 +68,18 @@ ColorCor3.Saturation = 0
 ColorCor3.TintColor = Color3.fromRGB(222, 240, 255)
 --]]
 
-SunRays.Intensity = 0.859
-SunRays.Spread = --[[0.727]] 0.356
+SunRays.Intensity = 0.15-- 0.859
+SunRays.Spread = 0.35 -- --[[0.727]] 0.356
 
 
-Lighting.Ambient = Color3.fromRGB(128, 128, 128--[[2,2,2]])
-Lighting.Brightness = 3.25
+Lighting.Ambient = Color3.fromRGB(138, 138, 138--[[2,2,2]])
+Lighting.Brightness = 2.5
 Lighting.ColorShift_Bottom = Color3.fromRGB(0,0,0)
 Lighting.ColorShift_Top = Color3.fromRGB(0,0,0)
 Lighting.EnvironmentDiffuseScale = 1
 Lighting.EnvironmentSpecularScale = 0.2
 Lighting.GlobalShadows = true
-Lighting.OutdoorAmbient = Color3.fromRGB(2,2,2--[[128, 128, 128]])
+Lighting.OutdoorAmbient = Color3.fromRGB(139, 139, 139--[[128, 128, 128]])
 Lighting.ShadowSoftness = 0.2
 Lighting.GeographicLatitude = 45
 Lighting.ExposureCompensation = 0
@@ -90,13 +90,14 @@ Atm.Color = Color3.fromRGB(199, 175, 166)
 Atm.Decay = Color3.fromRGB(44, 39, 33)
 Atm.Glare = 0.36
 Atm.Haze = 1.72
+--[[
 Atm2.Density = 0.211
 Atm2.Offset = 1
 Atm2.Color = Color3.fromRGB(216,255,250)
 Atm2.Decay = Color3.fromRGB(92, 60, 13)
 Atm2.Glare = 0.63
 Atm2.Haze = 0
-
+]]
 ter = game:GetService("Workspace"):FindFirstChild("Terrain")
 ter.WaterColor = Color3.new(12/255, 84/255, 91/255)
 ter.WaterReflectance = 0.65
