@@ -39,18 +39,18 @@ end
 Bloom.Parent = Lighting
 Blur.Parent = Lighting
 ColorCor.Parent = Lighting
-ColorCor2.Parent = Lighting
-ColorCor3.Parent = Lighting
+--ColorCor2.Parent = Lighting
+--ColorCor3.Parent = Lighting
 SunRays.Parent = Lighting
 --Sky.Parent = Lighting
 Atm.Parent = Lighting
-Atm2.Parent = Lighting
+--Atm2.Parent = Lighting
 
 Bloom.Intensity = 0.3
 Bloom.Size = 10
 Bloom.Threshold = 4
 
-Blur.Size = 2
+Blur.Size = 3.5
 
 ColorCor.Brightness = -0.04
 ColorCor.Contrast = 0.1
