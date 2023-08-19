@@ -18,6 +18,6 @@ for i,v in pairs(game.Workspace.Coins:GetDescendants()) do
     end
 end
 task.wait(.1)
-end
-        end)
+            end)
+            end
 end
