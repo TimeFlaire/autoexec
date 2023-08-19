@@ -9,8 +9,9 @@ while task.wait() do
         end)
     end
 end
-elseif game.PLaceId == 61846006 then
+elseif game.PlaceId == 61846006 then
 while true do
+        pcall(function()
 for i,v in pairs(game.Workspace.Coins:GetDescendants()) do
     if v.Name == "Coin" and not v:IsA("Sound") then
         v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
@@ -18,4 +19,5 @@ for i,v in pairs(game.Workspace.Coins:GetDescendants()) do
 end
 task.wait(.1)
 end
+        end)
 end
