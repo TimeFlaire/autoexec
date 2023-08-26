@@ -71,16 +71,16 @@ ColorCor3.TintColor = Color3.fromRGB(222, 240, 255)
 SunRays.Intensity = 0.15-- 0.859
 SunRays.Spread = 0.35 -- --[[0.727]] 0.356
 
-
-Lighting.Ambient = Color3.fromRGB(138, 138, 138--[[2,2,2]])
-Lighting.Brightness = 2.5
+-
+Lighting.Ambient = Color3.fromRGB(64,72,79--[[138, 138, 138]]--[[2,2,2]])
+Lighting.Brightness = 3 --2.5
 Lighting.ColorShift_Bottom = Color3.fromRGB(0,0,0)
 Lighting.ColorShift_Top = Color3.fromRGB(0,0,0)
-Lighting.EnvironmentDiffuseScale = 1
-Lighting.EnvironmentSpecularScale = 0.2
+Lighting.EnvironmentDiffuseScale = 0.202 -- 1
+Lighting.EnvironmentSpecularScale = 0.202
 Lighting.GlobalShadows = true
-Lighting.OutdoorAmbient = Color3.fromRGB(139, 139, 139--[[128, 128, 128]])
-Lighting.ShadowSoftness = 0.2
+Lighting.OutdoorAmbient = Color3.fromRGB(64,72,79--[[138, 138, 138]]--[[2,2,2]])
+Lighting.ShadowSoftness = 0 --0.2
 Lighting.GeographicLatitude = 45
 Lighting.ExposureCompensation = 0
 
