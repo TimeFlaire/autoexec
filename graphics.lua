@@ -71,7 +71,7 @@ ColorCor3.TintColor = Color3.fromRGB(222, 240, 255)
 SunRays.Intensity = 0.15-- 0.859
 SunRays.Spread = 0.35 -- --[[0.727]] 0.356
 
--
+
 Lighting.Ambient = Color3.fromRGB(64,72,79--[[138, 138, 138]]--[[2,2,2]])
 Lighting.Brightness = 3 --2.5
 Lighting.ColorShift_Bottom = Color3.fromRGB(0,0,0)
