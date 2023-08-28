@@ -4,8 +4,10 @@ if not game:IsLoaded() then
 end
 
 if game.PlaceId == 61846006 then --To prevent errors with other games when on autoexec, the game will be checked
---for i,v in pairs(workspace:FindPartsInRegion3(Region3.new(Vector3.new(-20.799148559570312,88.90079498291016,-13.818876266479492),Vector3.new(-20.799148559570312,88.90079498291016,-13.818876266479492)),nil,math.huge)) do if v.Name == "Ceiling" then v:Transparency = 1 end end
-loadstring(game:HttpGet("https://github.com/TimeFlaire/SoulmateColorGUI/edit/main/SimonSaysServerCrasher.lua",true))()
+coorutine.resume(coroutine.create(function()
+for i,v in pairs(workspace:FindPartsInRegion3(Region3.new(Vector3.new(-20.799148559570312,88.90079498291016,-13.818876266479492),Vector3.new(-20.799148559570312,88.90079498291016,-13.818876266479492)),nil,math.huge)) do if v.Name == "Ceiling" then v:Transparency = 1 end end
+	end))
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TimeFlaire/SoulmateColorGUI/main/SimonSaysServerCrasher.lua",true))()
 for i,v in pairs(game:GetService("Workspace").Building.Eliminate:GetDescendants()) do --Check's game.Workspace.Building.Eliminate
  if v.ClassName == "TouchTransmitter" then
      v:Destroy() -- Destroys all touch transmitters, making you immortal
