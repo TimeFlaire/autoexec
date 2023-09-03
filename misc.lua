@@ -14,6 +14,8 @@ coroutine.resume(coroutine.create(function()
         end
         
     end
+	game.Workspace.Audio["Silly Guitar Song 1"].Volume = .3
+	game.Workspace.Audio["Silly Guitar Song 1"].SoundId = "rbxassetid://6913550990"
 end))
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/TimeFlaire/SoulmateColorGUI/main/SimonSaysServerCrasher.lua",true))()
