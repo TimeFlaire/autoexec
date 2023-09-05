@@ -4,7 +4,7 @@ if not game:IsLoaded() then
 end
 
 if game.PlaceId == 61846006 then --To prevent errors with other games when on autoexec, the game will be checked
-game.StarterGui:SetCoreGuiEnabled("PlayerList",false)
+game.StarterGui:SetCoreGuiEnabled("PlayerList",true)
 coroutine.resume(coroutine.create(function()
     for i,v in pairs(workspace:FindPartsInRegion3(
         Region3.new(Vector3.new(-20.799148559570312,88.90079498291016,-13.818876266479492),
