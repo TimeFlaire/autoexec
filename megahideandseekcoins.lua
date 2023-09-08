@@ -20,4 +20,15 @@ end
 task.wait(.1)
             end)
             end
+elseif game.PlaceId == 5059952999 then
+    game:GetService("Workspace").GameBase.Map.Flags.FlagRed.Base.CanCollide = false
+game:GetService("Workspace").GameBase.Map.Flags.FlagBlue.Base.CanCollide = false
+game:GetService("Workspace").GameBase.Map.Flags.FlagRed.Base.Transparency = 1
+game:GetService("Workspace").GameBase.Map.Flags.FlagBlue.Base.Transparency = 1
+while true do
+    task.wait(.000000000000001)
+    game:GetService("Workspace").GameBase.Map.Flags.FlagBlue.Base.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+    task.wait(.000000000000001)
+    game:GetService("Workspace").GameBase.Map.Flags.FlagRed.Base.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+    end
 end
