@@ -14,6 +14,9 @@ while true do
         pcall(function()
 for i,v in pairs(game.Workspace.Coins:GetDescendants()) do
     if v.Name == "Coin" and not v:IsA("Sound") then
+            if v.CanCollide then
+                 v.CanCollide = false
+            end
         v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
     end
 end
