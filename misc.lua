@@ -5,6 +5,9 @@ end
 
 if game.PlaceId == 61846006 then --To prevent errors with other games when on autoexec, the game will be checked
 game.StarterGui:SetCoreGuiEnabled("PlayerList",true)
+	task.spawn(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/TimeFlaire/IY9/main/SIMONSAYS1",true))()
+		end)
 task.spawn(function()
 while true do
     pcall(function()
